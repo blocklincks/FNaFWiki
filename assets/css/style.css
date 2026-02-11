@@ -100,24 +100,25 @@ nav a:hover span{
     transform: rotate(180deg);
     padding-bottom: 3px;
 }
-#dropdown{
+.dropdown{
     position: absolute;
     top: 90px;
-    width: 19%;
-    left: 76%;
     background-color: #1b0f2f;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     animation: moveUp 0.3s ease forwards;
 }
-#dropdownAnim{
-    animation: moveDown 0.3s ease forwards;
+#dropdowngames{
+    left: 77%;
 }
-#dropdownAnimReverse{
-    animation: moveUp 0.3s ease forwards;
+#dropdownbooks{
+    left: 84%;
 }
-#dropdown a{
+#dropdownmovies{
+    left: 88%;
+}
+.dropdown a{
     display: block;
     text-align: left;
     padding: 10px;
@@ -127,27 +128,23 @@ nav a:hover span{
     transition: all 0.3s ease;
     height: 21px;
 }
-#dropdown a:hover{
+.dropdown a:hover{
     font-weight: bold;
 }
 @keyframes moveDown {
     from { 
-        height: 0px; 
-        display: none;
+        height: inherit; 
     }
     to { 
-        height: calc(41px * 10);
-        display: block;
+        height: fit-content;
     }
 }
 @keyframes moveUp {
     from { 
-        height: calc(41px * 10);
-        display: block;
+        height: inherit;
     }
     to { 
         height: 0px;
-        display: none;
     }
 }
 .content{
