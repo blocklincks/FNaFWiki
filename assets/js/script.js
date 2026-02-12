@@ -1,7 +1,7 @@
 // Liste des jeux pour le menu déroulant des jeux
 let games = [
     [
-        ["Serie principale <span>⏷</span>","jeux-video/SeriePrincipale/",
+        ["Serie principale ⏷","jeux-video/SeriePrincipale/",
             [
                 ["Five Nights at Freddy's","jeux-video/SeriePrincipale/FNaF1.php"],
                 ["Five Nights at Freddy's 2","jeux-video/SeriePrincipale/FNaF2.php"],
@@ -11,14 +11,14 @@ let games = [
                 ["Freddy Fazbear's Pizzeria Simulator","jeux-video/SeriePrincipale/FNaF6.php"],
                 ["Ultimate Custom Night","jeux-video/SeriePrincipale/FNaF7.php"],
                 ["Five Nights at Freddy's: Help Wanted","jeux-video/SeriePrincipale/FNaF8.php"],
-                ["Five Nights at Freddy's: Security Breach <span>⏷</span>","jeux-video/SeriePrincipale/FNaF9.php", 
+                ["Five Nights at Freddy's: Security Breach ⏷","jeux-video/SeriePrincipale/FNaF9.php", 
                     ["ruin", "jeux-video/SeriePrincipale/FNaF9ruin.php"]
                 ],
                 ["Five Nights at Freddy's: Help Wanted 2","jeux-video/SeriePrincipale/FNaF10.php"],
                 ["Five Nights at Freddy's: Secret of the Mimic","jeux-video/SeriePrincipale/FNaF11.php"],
             ]
         ],
-        ["Spin-offs <span>⏷</span>","jeux-video/SpinOffs.php",
+        ["Spin-offs ⏷","jeux-video/SpinOffs/",
             [
                 ["FNaF World","jeux-video/FNaFWorld.php"],
                 ["FNaF AR: Special Delivery","jeux-video/FNaFAR.php"],
@@ -30,14 +30,14 @@ let games = [
 // Liste des livres pour le menu déroulant des livres
 let books = [
     [
-        ["The Silver Eyes <span>⏷</span>","livres/SilverEyes/", 
+        ["The Silver Eyes ⏷","livres/SilverEyes/", 
             [
                 ["The Silver Eyes","livres/SilverEyes/SilverEyes.php"],
                 ["The Twisted Ones","livres/SilverEyes/TwistedOnes.php"],
                 ["The Fourth Closet","livres/SilverEyes/FourthCloset.php"],
             ]
         ],
-        ["The Freddy Files <span>⏷</span>","livres/FreddyFiles/",
+        ["The Freddy Files ⏷","livres/FreddyFiles/",
             [
                 ["The Freddy Files","livres/FreddyFiles/FreddyFiles.php"],
                 ["The Freddy Files: Updated Version","livres/FreddyFiles/FreddyFilesUpdated.php"],
@@ -47,16 +47,16 @@ let books = [
                 ["Ultimate Guide 2.0","livres/FreddyFiles/UltimateGuide2.php"],
             ]
         ],
-        ["Fazbear Frights <span>⏷</span>","livres/FazbearFrights/", 
+        ["Fazbear Frights ⏷","livres/FazbearFrights/", 
             [
                 ["Into the Pit","livres/FazbearFrights/IntoThePit.php"],
                 ["Fetch","livres/FazbearFrights/Fetch.php"],
                 ["1:35AM","livres/FazbearFrights/135AM.php"],
             ]
         ],
-        ["Tales from the Pizzaplex <span>⏷</span>","livres/TalesFromThePizzaplex.php"],
-        ["Interactive Novel <span>⏷</span>","livres/GraphicNovel.php"],
-        ["Autres <span>⏷</span>","livres/Autres.php"],
+        ["Tales from the Pizzaplex ⏷","livres/TalesFromThePizzaplex.php"],
+        ["Interactive Novel ⏷","livres/GraphicNovel.php"],
+        ["Autres ⏷","livres/Autres.php"],
     ]
 ]
 // Liste des films pour le menu déroulant des films
@@ -124,22 +124,22 @@ function addElement(title, url, parentID) {
 }
 // Animation du menu déroulant des jeux
 function toggleDropdown() {
-    document.getElementById('dropdowngames').style.animation = "moveDown 0.3s ease forwards";
+    document.getElementById('dropdowngames').style.animation = "moveDown 0.5s ease forwards";
 }
 function toggleDropdownOut() {
-    document.getElementById('dropdowngames').style.animation = "moveUp 0.3s ease forwards";
+    document.getElementById('dropdowngames').style.animation = "moveUp 0.5s ease forwards";
 }
 // Animation du menu déroulant des livres
 function toggleDropdownBooks() {
-    document.getElementById('dropdownbooks').style.animation = "moveDown 0.3s ease forwards";
+    document.getElementById('dropdownbooks').style.animation = "moveDown 0.5s ease forwards";
 }
 function toggleDropdownBooksOut() {
-    document.getElementById('dropdownbooks').style.animation = "moveUp 0.3s ease forwards";
+    document.getElementById('dropdownbooks').style.animation = "moveUp 0.5s ease forwards";
 }
 // Animation du menu déroulant des films
 function toggleDropdownMovies() {
-    document.getElementById('dropdownmovies').style.animation = "moveDown 0.3s ease forwards";
+    document.getElementById('dropdownmovies').style.animation = "moveDown 0.5s ease forwards";
 }
 function toggleDropdownMoviesOut() {
-    document.getElementById('dropdownmovies').style.animation = "moveUp 0.3s ease forwards";
+    document.getElementById('dropdownmovies').style.animation = "moveUp 0.5s ease forwards";
 }

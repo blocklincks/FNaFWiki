@@ -70,11 +70,11 @@ body {
 nav{
     color: #edd3ff;
     padding: 10px;
-    right: 0;
+    right: 50px;
     position: absolute;
     left: auto;
     top: 50px;
-    width: 30%;
+    width: 35%;
     height: 50px;
     
 }
@@ -107,16 +107,16 @@ nav a:hover span{
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     overflow: hidden;
-    animation: moveUp 0.3s ease forwards;
+    animation: moveUp 0.0s ease forwards;
 }
 #dropdowngames{
-    left: 77%;
+    left: 67%;
 }
 #dropdownbooks{
-    left: 84%;
+    left: 76%;
 }
 #dropdownmovies{
-    left: 88%;
+    left: 83%;
 }
 .dropdown a{
     display: block;
@@ -205,14 +205,10 @@ nav a:hover span{
     color: #ffffff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
-body > .content{
-    margin-bottom: 100px;
-}
 #footer{
     color: #edd3ff;
     text-align: center;
     padding: 10px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     border-bottom-left-radius: 0%;
