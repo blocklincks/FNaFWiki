@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FNaFWiki</title>
     <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo(rand(1,1000));?>">
 </head>
 <body>
     <div id="header" class="card">
         <img src="assets/img/icon.png" alt="FNaF Wiki Icon" id="logo">
         <h1>FNaFWiki</h1>
+        <!--
         <nav>
             <a href="index.php">Accueil</a></li>
             <a href="jeux-video/" id="gameNav" onmouseover="toggleDropdown()" onmouseout="toggleDropdownOut()">Jeux-video <span>⏷</span></a></li>
@@ -18,11 +19,8 @@
             <a href="films/" id="movieNav" onmouseover="toggleDropdownMovies()" onmouseout="toggleDropdownMoviesOut()">Films <span>⏷</span></a></li>
             <a href="lore.php">Lore</a></li>
         </nav>
+-->
         <div id="dropdowngames" class="dropdown" onmouseover="toggleDropdown()" onmouseout="toggleDropdownOut()">
-        </div>
-        <div id="dropdownbooks" class="dropdown" onmouseover="toggleDropdownBooks()" onmouseout="toggleDropdownBooksOut()">
-        </div>
-        <div id="dropdownmovies" class="dropdown" onmouseover="toggleDropdownMovies()" onmouseout="toggleDropdownMoviesOut()">
         </div>
     </div>
     <div class="content card">
@@ -56,7 +54,7 @@
     <footer id="footer" class="card">
         <p>&copy; 2026 FNaF Wiki. Tous droits réservés.</p>
     </footer>
-    <script src="assets/js/script.js">
-    </script>
+    <script src="assets/js/save.js?v=<?php echo(rand(1,1000));?>" type="module"></script>
+    <script src="assets/js/script.js?v=<?php echo(rand(1,1000));?>" type="module"></script>
 </body>
 </html>
