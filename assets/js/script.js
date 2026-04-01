@@ -53,15 +53,14 @@ function addElement(title, url, elementType, parentId, setId) {
   const newContent = document.createTextNode(title);
   newA.appendChild(newContent);
   const currentDiv = document.getElementById(parentId);
-  if(elementType === "div" && parentId ==! "header"){
+  currentDiv.appendChild(newA);
+  if(elementType === "div" && parentId !== "header"){
     let left = currentDiv.offsetLeft;
     let top = currentDiv.offsetTop + 10;
     newA.style.position = "absolute"
     newA.style.left = left + "px";
     newA.style.top = top + "px";
   }
-  currentDiv.appendChild(newA);
-  
 }
 // Animation du menu déroulant des jeux
 function toggleDropdown() {

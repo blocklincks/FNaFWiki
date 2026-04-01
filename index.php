@@ -11,17 +11,13 @@
     <div id="header" class="card">
         <img src="assets/img/icon.png" alt="FNaF Wiki Icon" id="logo">
         <h1>FNaFWiki</h1>
-        <!--
-        <nav>
+        <!--<nav>
             <a href="index.php">Accueil</a></li>
             <a href="jeux-video/" id="gameNav" onmouseover="toggleDropdown()" onmouseout="toggleDropdownOut()">Jeux-video <span>⏷</span></a></li>
             <a href="livres/" id="bookNav" onmouseover="toggleDropdownBooks()" onmouseout="toggleDropdownBooksOut()">Livres <span>⏷</span></a></li>
             <a href="films/" id="movieNav" onmouseover="toggleDropdownMovies()" onmouseout="toggleDropdownMoviesOut()">Films <span>⏷</span></a></li>
             <a href="lore.php">Lore</a></li>
-        </nav>
--->
-        <div id="dropdowngames" class="dropdown" onmouseover="toggleDropdown()" onmouseout="toggleDropdownOut()">
-        </div>
+        </nav>-->
     </div>
     <div class="content card">
         <!-- Contenu principal de la page -->
