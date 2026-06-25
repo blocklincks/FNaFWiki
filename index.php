@@ -1,14 +1,3 @@
-<?php
-    $conn = mysqli_connect("localhost", "root", "", "fnafwiki");
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    $sql = "SELECT * FROM navigation";
-    $result = mysqli_query($conn, $sql);
-    foreach ($result as $row) {
-        $navItems[] = $row;
-    }
-?>
 <!DOCTYPE html>
 <html lang="fr">
     <?php

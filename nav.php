@@ -11,34 +11,16 @@
 		<td><img src="assets/img/icon.png" alt="FNaF Wiki Icon" id="logo"></td>
 		<td id="title">FNaFWiki</td>
 		<td id="nav">
-			<table id="nav-table">
 				<?php
-					for($i = 0; $i < count($navItems); $i++) {
-						$item = $navItems[$i];
-						if ($item['connected_name'] === NULL) {
-							if ($item['name'] === 'Accueil') {
-							echo '<td><a href="index.php">' . $item['name'] . '</a></td>';
-							
-						} else {
-							echo '<td><a href="page.php?name=' . urlencode($item['name']) . '">' . $item['name'] . '</a></td>';
-							echo '<table>';
-							for($j = 0; $j < count($navItems); $j++) {
-								$subItem = $navItems[$j];
-								if ($subItem['connected_name'] === $item['name']) {
-									echo '<tr><td><a href="page.php?name=' . urlencode($subItem['name']) . '">' . $subItem['name'] . '</a></td></tr>';
-								}
-							}
-							echo '</table>';
-						}
-						}
-						
-					}
+					include 'assets/php/logic.php';
+					$logic = new logic();
+					$logic->getNavBarItems();
 				?>
+				<!--
 				<td><a href="index.php">Accueil</a></td>
 				<td><a href="page.php?name=Jeux vidéo">Jeux vidéo</a></td>
 				<td><a href="page.php?name=Livres">Livres</a></td>
 				<td><a href="page.php?name=Films">Films</a></td>
-				<td><a href="page.php?name=Theories">Theories</a></td>
-			</table>
+				<td><a href="page.php?name=Theories">Theories</a></td>-->
 		</td>
 	</table>
