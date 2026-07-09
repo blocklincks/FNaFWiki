@@ -17,13 +17,16 @@ class logic{
                 }
                 echo '</table>';
             }else{
-                echo '<table class="nav-table"><tr>';
+                echo '<table id="'. $item['connected_name'] .'" class="nav-table">';
                 echo '<td><ul>';
                 foreach($item['name'] as $name){
                     echo '<li><a href="page.php?name='.$name.'">'.$name.'</a></li>';
                 }
-                echo '</ul></td></tr></table>';
+                echo '</ul></td></table>';
             }
         }
+    }
+    public function getNavBarTable(){
+        return $this->dataAcess->getNavBarItems();
     }
 }

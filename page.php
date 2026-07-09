@@ -10,7 +10,7 @@
     <?php
         include 'footer.php';
     ?>
-    <script src="assets/js/save.js?v=<?php echo(rand(1,1000));?>" type="module"></script>
+    <!-- <script src="assets/js/save.js?v=<?php echo(rand(1,1000));?>" type="module"></script> -->
     <!-- <script src="assets/js/script.js?v=<?php echo(rand(1,1000));?>" type="module"></script> -->
 </body>
 </html>

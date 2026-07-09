@@ -1,0 +1,67 @@
+/* Conteneur principal */
+.menu-deroulant {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+/* Le bouton */
+.bouton-menu {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Animation de l'icône au survol */
+.menu-deroulant:hover .icone {
+  transform: rotate(180deg);
+}
+
+.icone {
+  transition: transform 0.3s ease;
+}
+
+/* Masquer la liste par défaut */
+.liste-liens {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0 0 5px 5px;
+  
+  /* Configuration de l'animation de déroulement */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+/* Afficher la liste au survol */
+.menu-deroulant:hover .liste-liens {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Style des liens dans la liste */
+.liste-liens li a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.liste-liens li a:hover {
+  background-color: #f1f1f1;
+}

@@ -3,8 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FNaFWiki</title>
     <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
-    <!-- <link rel="stylesheet" href="assets/css/style.css?v=<?php echo(rand(1,1000));?>"> -->
     <link rel="stylesheet" href="assets/css/style.css?v=<?php echo(rand(1,1000));?>">
+	<style>
+		<?php
+		
+		?>
+	</style>
 </head>
 <body>
 	<table id="header" class="card">
@@ -16,11 +20,5 @@
 					$logic = new logic();
 					$logic->getNavBarItems();
 				?>
-				<!--
-				<td><a href="index.php">Accueil</a></td>
-				<td><a href="page.php?name=Jeux vidéo">Jeux vidéo</a></td>
-				<td><a href="page.php?name=Livres">Livres</a></td>
-				<td><a href="page.php?name=Films">Films</a></td>
-				<td><a href="page.php?name=Theories">Theories</a></td>-->
 		</td>
 	</table>
