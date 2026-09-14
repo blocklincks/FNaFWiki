@@ -19,27 +19,27 @@
         <table>
             <tr>
                 <td>
-                    <a class="imgNavCase" href="games.php">
+                    <a class="imgNavCase" href="./page.php?name=Jeux video">
                         <h3>Jeux video</h3>
-                        <img src="assets/img/game.png" alt="fnaf games" style="max-width: 100%; height: auto;">
+                        <img class="lien" src="assets/img/game.png" alt="fnaf games" style="max-width: 100%; height: auto;" width="35dvw">
                     </a>
                 </td>
                 <td>
-                    <a class="imgNavCase" href="books.php">
+                    <a class="imgNavCase" href="./page.php?name=Livres">
                         <h3>Livres</h3>
-                        <img src="assets/img/book.png" alt="fnaf books" style="max-width: 100%; height: auto;">
+                        <img class="lien" src="assets/img/book.png" alt="fnaf books" style="max-width: 100%; height: auto;" width="35dvw">
                     </a>
                 </td>
                 <td>
-                    <a class="imgNavCase" href="movies.php">
+                    <a class="imgNavCase" href="./page.php?name=Films">
                         <h3>Films</h3>
-                        <img src="assets/img/movie.png" alt="fnaf movies" style="max-width: 100%; height: auto;">
+                        <img class="lien" src="assets/img/movie.png" alt="fnaf movies" style="max-width: 100%; height: auto;" width="35dvw">
                     </a>
                 </td>
                 <td>
-                    <a class="imgNavCase" href="theories.php">
+                    <a class="imgNavCase" href="./page.php?name=Theories">
                         <h3>Theories</h3>
-                        <img src="assets/img/theories.png" alt="fnaf theories" style="max-width: 100%; height: auto;">
+                        <img class="lien" src="assets/img/theories.png" alt="fnaf theories" style="max-width: 100%; height: auto;" width="35dvw">
                     </a>
                 </td>
             </tr>

@@ -7,22 +7,47 @@ class logic{
         $this->dataAcess = new DataAcess();
     }
 
+
     public function getNavBarItems(){
         $navItems = $this->dataAcess->getNavBarItems();
-        foreach($navItems as $item){
-            if($item['connected_name'] === "NULL"){
-                echo '<table id="nav-table">';
-                foreach($item['name'] as $name){
-                    echo '<td><a href="page.php?name='.$name.'">'.$name.'</a></td>';
+        foreach ($navItems as $item) {
+            if ($item['connected_name'] === NULL){
+                if ($this->ifHasKids($item['name'], $navItems)){
+                    echo '<div class="menu-deroulant" onmouseover="hoverMenu(this)" onmouseout="hideMenu(this)">
+                        <div class="bouton-menu"><a href="./page.php?name='.$item['name'].'">'.$item['name'].' <span class="icone">▼</span></a></div>
+                        <ul class="liste-liens menu">';
+                    $this->writeNavBarChild($item['name'], $navItems);
+                    echo '</ul></div>';
+                }else{
+                    echo '<div class="menu-deroulant"><a href="./page.php?name='.$item['name'].'">'.$item['name'].'</a></div>';
                 }
-                echo '</table>';
-            }else{
-                echo '<table id="'. $item['connected_name'] .'" class="nav-table">';
-                echo '<td><ul>';
-                foreach($item['name'] as $name){
-                    echo '<li><a href="page.php?name='.$name.'">'.$name.'</a></li>';
+            }
+        }
+    }
+
+    function ifHasKids($name, $navItems){
+        $hasKids = false;
+        foreach ($navItems as $item) {
+            if($name == $item['connected_name']){
+                $hasKids = true;
+            }
+        }
+        return $hasKids;
+    }
+
+    function writeNavBarChild($connected_name, $navItems){
+        foreach ($navItems as $item){
+            if($item['connected_name'] == $connected_name){
+                if ($this->ifHasKids($item['name'], $navItems)){
+                    echo '<li class="menu-deroulant" onmouseover="hoverMenu(this)" onmouseout="hideMenu(this)">
+                    <div class="bouton-menu"><a href="./page.php?name='.$item['name'].'">'.$item['name'].' <span class="icone">▷</span></a></div>
+                    <ul class="liste-liens menu sous-menu">';
+                    $this->writeNavBarChild($item['name'], $navItems);
+                    echo '</ul></li>';
+
+                }else{
+                    echo '<li class="menu-deroulant"><a href="./page.php?name='.$item['name'].'">'.$item['name'].'</a></li>';
                 }
-                echo '</ul></td></table>';
             }
         }
     }

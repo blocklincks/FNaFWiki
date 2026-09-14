@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #0f001a;
+    overflow-x: hidden;
 }
 body {
     min-height: 100dvh;
@@ -55,29 +56,89 @@ body {
   width: 33.33%;       /* Divides the 100% table width equally among the 3 TDs */
   padding: 10px;
 }
-#nav td{
-  width: fit-content;
-}
 #nav{
-  text-align: right;
-}
-#nav-table{
-  margin-left: auto;
-  margin-right: 1dvw;
-  table-layout: fixed;
-}
-#nav-table a{
-  color: #D5C7FF;
-  text-decoration: none;
   text-align: center;
-  padding: 0.4dvw;
-  font-size: 1dvw;
-  transition: 0.5s;
 }
-#nav-table a:hover{
-  color: #FFFFFF;
-  font-size: 1.1dvw;
+
+/* Conteneur principal */
+.menu-deroulant {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 12px 20px;
+  text-decoration: none;
 }
+
+/* Le bouton */
+.bouton-menu {
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bouton-menu a, .menu-deroulant a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Animation de l'icône au survol */
+.menu-deroulant .icone {
+  rotate: 0deg;
+}
+
+.menu-deroulant:hover .icone {
+  transform: rotate(180deg);
+}
+.icone {
+  transition: transform 0.3s ease;
+}
+
+/* Masquer la liste par défaut */
+.liste-liens {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  
+  width: 7dvw;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0 0 5px 5px;
+  
+  /* Configuration de l'animation de déroulement */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+.menu {
+    left: 0;
+}
+
+.sous-menu {
+    left: 7dvw;
+    top: 0;
+}
+
+/* Style des liens dans la liste */
+.liste-liens li a {
+  color: black;
+  padding: 10px 13px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+li.menu-deroulant:hover{
+  background-color: #d872f7;
+  color: #5a189a;
+}
+
+
 /*page*/
 .content{
   padding: 0.1dvw 0.5dvw;
@@ -86,13 +147,16 @@ body {
   border-radius: 1dvw;
   font-size: 1dvw;
 }
+.content a{
+  color: #360047;
+  text-decoration: none;
+}
 .content h2{
   text-align: center;
 }
 .content img{
   position: relative;
   border-radius: 1dvw;
-  width: 35dvw
 }
 .content h3{
   text-align: center;
@@ -100,16 +164,17 @@ body {
 .content td{
   padding: 0.5dvw;
 }
-.content a img{
+.content a .lien{
   transform: scale(1);
   transition: 0.5s;
 }
-.content a img:hover{
+.content a .lien:hover{
   transform: scale(1.05);
 }
 
 /*footer*/
 #footer{
+  width: 100dvw;
   text-align: center;
   padding: 0.5dvw;
   background-color: #180029;

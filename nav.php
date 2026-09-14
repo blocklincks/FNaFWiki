@@ -22,3 +22,18 @@
 				?>
 		</td>
 	</table>
+	<script>
+    function hoverMenu(thisElement) {
+        const menu = thisElement.querySelector('.menu');
+        menu.style.opacity = '1';
+        menu.style.visibility = 'visible';
+        menu.style.transform = 'translateY(0)';
+    }
+    
+    function hideMenu(thisElement) {
+        const menu = thisElement.querySelector('.menu');
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        menu.style.transform = 'translateY(-10px)';
+    }
+	</script>

@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="test2.css">
+<div class="menu-deroulant" onmouseover="hoverMenu(this)" onmouseout="hideMenu(this)">
+  <div class="bouton-menu">Menu <span class="icone">▼</span></div>
+  <ul class="liste-liens menu">
+
+    <li class="menu-deroulant" onmouseover="hoverMenu(this)" onmouseout="hideMenu(this)">
+        <div class="bouton-menu"><a href="#">Lien 1 <span class="icone">▼</span></a></div>
+        <ul class="liste-liens menu sous-menu">
+            
+            <li class="menu-deroulant" onmouseover="hoverMenu(this)" onmouseout="hideMenu(this)">
+                <div class="bouton-menu"><a href="#">Lien 2 <span class="icone">▼</span></a></div>
+                <ul class="liste-liens menu sous-menu">
+                    <li><a href="#">Lien 7</a></li>
+                    <li><a href="#">Lien 8</a></li>
+                    <li><a href="#">Lien 9</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="#">Lien 5</a></li>
+            <li><a href="#">Lien 6</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Lien 2</a></li>
+    <li><a href="#">Lien 3</a></li>
+  </ul>
+</div>
+<script>
+    function hoverMenu(thisElement) {
+        const menu = thisElement.querySelector('.menu');
+        menu.style.opacity = '1';
+        menu.style.visibility = 'visible';
+        menu.style.transform = 'translateY(0)';
+    }
+    
+    function hideMenu(thisElement) {
+        const menu = thisElement.querySelector('.menu');
+        menu.style.opacity = '0';
+        menu.style.visibility = 'hidden';
+        menu.style.transform = 'translateY(-10px)';
+    }
+</script>
