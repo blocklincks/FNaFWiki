@@ -49,12 +49,5 @@ values ("Accueil", NULL),
         ("Tales from the Pizzaplex 5: The Bobbiedots Conclusion", 'Tales from the Pizzaplex'),
         ("Tales from the Pizzaplex 6: Nexie", 'Tales from the Pizzaplex'),
         ("Tales from the Pizzaplex 7: Tiger Rock", 'Tales from the Pizzaplex'),
-        ("Tales from the Pizzaplex 8: B7-2", 'Tales from the Pizzaplex'),
-        ("The Silver Eyes", 'Trilogie des romans'),
-        ("The Twisted Ones", 'Trilogie des romans'),
-        ("The Fourth Closet", 'Trilogie des romans'),
-        ("Guide", 'Livres'),
-        ("Graphic Novel", 'Livres'),
-        ("Guide", 'Livres'),
-        ("Graphic Novel", 'Livres');
+        ("Tales from the Pizzaplex 8: B7-2", 'Tales from the Pizzaplex');
        

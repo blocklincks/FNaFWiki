@@ -143,9 +143,9 @@ li.menu-deroulant:hover{
 .content{
   padding: 0.1dvw 0.5dvw;
   background-color: #E8E0FF;
-  margin: 1dvw;
+  margin: 2dvw 5dvw;
   border-radius: 1dvw;
-  font-size: 1dvw;
+  font-size: 16pt;
 }
 .content a{
   color: #360047;
@@ -170,6 +170,12 @@ li.menu-deroulant:hover{
 }
 .content a .lien:hover{
   transform: scale(1.05);
+}
+.content td:first-child div{
+  margin-left: 5%;
+}
+.content td:last-child img{
+  width: 30dvw;
 }
 
 /*footer*/

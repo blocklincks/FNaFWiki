@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
     <?php
-        if (!isset($_GET['name']) || empty($_GET['name']) || $_GET['name'] === "Accueil") {
+        if (!isset($_GET['p']) || empty($_GET['p']) || $_GET['p'] === "Accueil") {
             header("Location: index.php");
             exit();
         }
         include 'nav.php';
-        if ($_GET['name'] === "Série principale"){
+        if ($_GET['p'] === "Série principale"){
             echo "<div class='content card'>
         <h2>La série principale</h2>
         <table>
@@ -27,15 +27,45 @@
         </table>
     </div>
     <div class='content card'>
-        <a href='./page.php?name=Five Nights at Freddy's'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s"'.">
             <h2>Five Nights at Freddy's</h2>
             <table >
                 <td width='30%'>
-                    <img src='assets/img/FreddyLookCam.png' alt='FNaF1.png'>
+                    <img src='assets/img/FreddyLookCam.png' alt='FNaF1.png' style='width:30dvw;'>
                 </td>
                 <td>
                     <p>Five Nights at Freddy's est le premier jeu sortie de la série. Ce qui devait être un jeu d'horreur indépendant comme n'importe quel autres, a finalement explosé sur internet et en est devenu culte</p>
                     <p>Sortie le 8 Aout 2014, le jeu est sortie au moment de la tendance des jeux d'horreur sur internet. Tous les youtubeurs de cette époque se sont arraché pour y jouer et faire des let's play dessus. Que ce soit Squeezie, KaraL, et autre en France, ou même Markiplier au États-Unis. Le jeu a fais le tour du globe</p>
+                    <p>Cliqué pour en savoir plus ...</p>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 2"'.">
+            <h2>Five Nights at Freddy's 2</h2>
+            <table >
+                <td width='70%'>
+                    <div>
+                        <p>Five Nights at Freddy's 2 est le second jeu sortie de la série.</p>
+                        <p>Cliqué pour en savoir plus ...</p>
+                    </div>
+                </td>
+                <td width='30%'>
+                    <img src='assets/img/ToyChicaPortrait.png' alt='FNaF2.png' style='width:30dvw;'>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 3"'.">
+            <h2>Five Nights at Freddy's 3</h2>
+            <table >
+                <td width='30%'>
+                    <img src='assets/img/SpringtrapPortrait.png' alt='FNaF3.png' style='width:30dvw;'>
+                </td>
+                <td>
+                    <p>Five Nights at Freddy's 3 est le troisième jeu sortie de la série.</p>
                     <p>Cliqué pour en savoir plus ...</p>
                 </td>
             </table>
