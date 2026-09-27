@@ -26,8 +26,8 @@
             <td><p>Five Nights at Freddy's a 11 jeux considéré comme 'principale'. Ce sont les jeux qui suivent l'histoire du premier jeu</p></td>
         </table>
     </div>
-    <div class='content card'>
-        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s"'.">
+    <div class='content card' style='background-color: black;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s"'."style='color: white;'>
             <h2>Five Nights at Freddy's</h2>
             <table >
                 <td width='30%'>
@@ -41,8 +41,8 @@
             </table>
         </a>
     </div>
-    <div class='content card'>
-        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 2"'.">
+    <div class='content card' style='background-color: darkred;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 2"'."style='color: red;'>
             <h2>Five Nights at Freddy's 2</h2>
             <table >
                 <td width='70%'>
@@ -52,20 +52,140 @@
                     </div>
                 </td>
                 <td width='30%'>
-                    <img src='assets/img/ToyChicaPortrait.png' alt='FNaF2.png' style='width:30dvw;'>
+                    <img src='assets/img/fnaf2.png' alt='FNaF2.png' style='width:30dvw;'>
                 </td>
             </table>
         </a>
     </div>
-    <div class='content card'>
-        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 3"'.">
+    <div class='content card' style='background-color: darkgreen;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 3"'." style='color: lime;'>
             <h2>Five Nights at Freddy's 3</h2>
             <table >
                 <td width='30%'>
-                    <img src='assets/img/SpringtrapPortrait.png' alt='FNaF3.png' style='width:30dvw;'>
+                    <img src='assets/img/fnaf3.png' alt='FNaF3.png' style='width:30dvw;'>
                 </td>
                 <td>
                     <p>Five Nights at Freddy's 3 est le troisième jeu sortie de la série.</p>
+                    <p>Cliqué pour en savoir plus ...</p>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: darkred;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s 4"'."style='color: red;'>
+            <h2>Five Nights at Freddy's 4</h2>
+            <table >
+                <td width='70%'>
+                    <div>
+                        <p>Five Nights at Freddy's 4 était sensé être le dernier chapitre, le dernier jeu de la série. Mais ceci n'était pas le cas</p>
+                        <p>Cliqué pour en savoir plus ...</p>
+                    </div>
+                </td>
+                <td width='30%'>
+                    <img src='assets/img/fnaf4.png' alt='FNaF2.png' style='width:30dvw;'>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: darkblue;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s Sister Location"'." style='color: blue;'>
+            <h2>Five Nights at Freddy's Sister Location</h2>
+            <table >
+                <td width='30%'>
+                    <img src='assets/img/fnafsl.png' alt='FNaF3.png' style='width:30dvw;'>
+                </td>
+                <td>
+                    <p>Five Nights at Freddy's Sister Location sort un peu du coté, surnaturel pour un coté plus science-fiction</p>
+                    <p>Cliqué pour en savoir plus ...</p>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: orange;'>
+        <a href=".'"./page.php?p=Freddy Fazbear Pizza Simulator"'."style='color: brown;'>
+            <h2>Freddy Fazbear Pizza Simulator</h2>
+            <table >
+                <td width='70%'>
+                    <div>
+                        <p>Freddy Fazbear Pizza Simulator est un jeu tycoon, toujours accompagné du style de survie des ancien jeux</p>
+                        <p>Cliqué pour en savoir plus ...</p>
+                    </div>
+                </td>
+                <td width='30%'>
+                    <img src='assets/img/ffps.png' alt='FNaF2.png' style='width:30dvw;'>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: black;'>
+        <a href=".'"./page.php?p=Ultimate Custom Night"'." style='color: white;'>
+            <h2>Ultimate Custom Night</h2>
+            <table >
+                <td width='30%'>
+                    <img src='assets/img/ucn.png' alt='ucn.png' style='width:30dvw;'>
+                </td>
+                <td>
+                    <p>Ultimate Custom Night n'a plus qu'une seul nuit, ou le joueur choisie la difficulté de 50 animatroniques</p>
+                    <p>Cliqué pour en savoir plus ...</p>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: cyan;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s Help Wanted"'."style='color: blue;'>
+            <h2>Five Nights at Freddy's Help Wanted</h2>
+            <table >
+                <td width='70%'>
+                    <div>
+                        <p>Five Nights at Freddy's Help Wanted est un jeu en réalité vistuel (VR), ou tu joue aux 3 premier jeu et du contenu additionel</p>
+                        <p>Cliqué pour en savoir plus ...</p>
+                    </div>
+                </td>
+                <td width='30%'>
+                    <img src='assets/img/fnafhp.png' alt='FNaFHP.png' style='width:30dvw;'>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: black;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'s".' Security Breach"'." style='color: red;'>
+            <h2>Five Nights at Freddy's Security Breach</h2>
+            <table >
+                <td width='30%'>
+                    <img src='assets/img/fnafsb.png' alt='fnafsb.png' style='width:30dvw;'>
+                </td>
+                <td>
+                    <p>Dans Five Nights at Freddy's Security Breach tu joue Gregory, un enfant qui a était enfermé dans le pizzaplex. Ton but sera de surivre jusqu'a 6 heure du matin.</p>
+                    <p>Cliqué pour en savoir plus ...</p>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: black;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'".'s Help Wanted 2"'."style='color: pink;'>
+            <h2>Five Nights at Freddy's Help Wanted 2</h2>
+            <table >
+                <td width='70%'>
+                    <div>
+                        <p>Five Nights at Freddy's Help Wanted 2 est dans le même style que le premier Help Wanted mais avec les autre jeu que les 3 premier</p>
+                        <p>Cliqué pour en savoir plus ...</p>
+                    </div>
+                </td>
+                <td width='30%'>
+                    <img src='assets/img/fnafhp2.png' alt='FNaFHP2.png' style='width:30dvw;'>
+                </td>
+            </table>
+        </a>
+    </div>
+    <div class='content card' style='background-color: black;'>
+        <a href=".'"./page.php?p=Five Nights at Freddy'."'s".' Secret of the Mimic"'." style='color: orange;'>
+            <h2>Five Nights at Freddy's Secret of the Mimic</h2>
+            <table >
+                <td width='30%'>
+                    <img src='assets/img/fnafsotm.png' alt='fnafsotm.png' style='width:30dvw;'>
+                </td>
+                <td>
+                    <p>Dans Five Nights at Freddy's Secret of the Mimic On se retrouve dans les années 70. Avant tout les événement de la série.</p>
                     <p>Cliqué pour en savoir plus ...</p>
                 </td>
             </table>

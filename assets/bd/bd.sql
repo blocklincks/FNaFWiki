@@ -8,7 +8,7 @@ create table navigation(
 
 insert into navigation (name, connected_name)
 values ("Accueil", NULL),
-        ("Jeux vidéo", NULL),
+        ("Jeux vidéo", NULL,),
         ("Livres", NULL),
         ("Films", NULL),
         ("Theories", NULL),
